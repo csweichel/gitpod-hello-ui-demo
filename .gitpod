@@ -1,0 +1,9 @@
+checkoutLocation: src/github.com/32leaves/hello-ui
+workspaceLocation: /
+image:
+  file: Dockerfile
+ports:
+  - port: 6080
+    protocol: "http"
+tasks:
+  - command: "go get -v ./... && go run main.go"
